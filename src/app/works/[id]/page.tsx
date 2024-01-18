@@ -9,10 +9,10 @@ export default function WorkPage({
 }) {
 
   const data: WorkType = works.find((work) => work.id === id)!;
-  
+
   return (
     <div className="container p-10 mx-auto max-w-lg">
-      <WorkItem data={data} />
+      <WorkItem title={data.title} description={data.description} imageSrc={data.imageSrc}  />
     </div>
   );
 }

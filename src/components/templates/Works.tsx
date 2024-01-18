@@ -1,7 +1,7 @@
 
 import { WorkType } from "@/type/WorkType";
-import SectionTitle from "./Parts/SectionTitle";
-import WorkCard from "./Parts/WorkCard";
+import SectionTitle from "../Parts/SectionTitle";
+import WorkCard from "../Parts/WorkCard";
 
 type Props = {
   works: WorkType[]
@@ -18,6 +18,7 @@ export default function Works({works}: Props) {
               key={work.id}
               id={work.id}
               title={work.title}
+              description={work.description}
               imageSrc={work.imageSrc}
             />
           ))}

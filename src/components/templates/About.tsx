@@ -1,5 +1,5 @@
 import Image from "next/image";
-import SectionTitle from "./Parts/SectionTitle";
+import SectionTitle from "../Parts/SectionTitle";
 
 export default function About() {
   return (

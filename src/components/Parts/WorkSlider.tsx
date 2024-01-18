@@ -1,11 +1,18 @@
 import { WorkType } from "@/type/WorkType";
 import Image from "next/image";
 
-export default function WorkSlider({imageSrc}: WorkType) {
+export default function WorkSlider({ imageSrc, description }: WorkType) {
   return (
-    <>
-    <div>slider sample</div>
-    <Image src={imageSrc} alt="slider image" width={300} height={300} />
-    </>
-  )
+    <div>
+      <div>{description}</div>
+      <Image
+        src={imageSrc}
+        alt={description}
+        width={500}
+        height={400}
+        sizes="100vw"
+        className="w-full h-auto"
+      />
+    </div>
+  );
 }
