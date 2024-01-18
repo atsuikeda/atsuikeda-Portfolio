@@ -11,8 +11,8 @@ export default function HomeBlog() {
         </Link>
       </div>
 
-      <div className="my-8 px-4">
-        <p className="my-14 text-center text-2xl text-gray-700 font-bold ">coming soon...</p>
+      <div className="mt-8 px-4">
+        <p className="p-16 text-center text-2xl text-gray-700 font-bold ">coming soon...</p>
       </div>
     </section>
   );

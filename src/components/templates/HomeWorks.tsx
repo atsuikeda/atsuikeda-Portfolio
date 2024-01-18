@@ -13,7 +13,7 @@ export default function HomeWorks() {
         </Link>
       </div>
 
-      <div className="px-4 mt-8">
+      <div className="mt-4">
         <Slider works={works} />
       </div>
     </section>
