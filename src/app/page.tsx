@@ -5,7 +5,7 @@ import HomeBlog from "@/components/templates/HomeBlog";
 
 export default function Home() {
   return (
-    <div className="px-10 mx-auto max-w-3xl">
+    <div className="container px-5 mx-auto xl:max-w-screen-lg">
       <HomeWorks />
       <HomeBlog />
     </div>

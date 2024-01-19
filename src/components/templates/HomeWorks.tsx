@@ -6,9 +6,9 @@ import { works } from "@/type/WorkType";
 export default function HomeWorks() {
   return (
     <section>
-      <div className="flex items-baseline ">
+      <div className="text-center md:flex items-baseline">
         <SectionTitle title="Works" />
-        <Link href="works" className="ml-8 text-gray-700 hover:text-gray-500">
+        <Link href="works" className="hover:text-gray-500 md:ml-8">
           View all →
         </Link>
       </div>

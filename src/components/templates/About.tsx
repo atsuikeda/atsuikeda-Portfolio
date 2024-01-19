@@ -14,8 +14,8 @@ export default function About() {
             className="object-cover"
           />
         </div>
-        <div className="mt-4 pl-4  text-gray-700">
-          <p className="text-lg font-bold">池田 睦</p>
+        <div className="mt-4 pl-4">
+          <p className="text-xl">池田 睦</p>
           <p className="mt-2">
             自己紹介
             <br />

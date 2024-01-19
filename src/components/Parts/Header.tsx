@@ -3,20 +3,20 @@ import Link from "next/link";
 export default function Header() {
   return (
     <header>
-      <div className="py-8 mx-auto">
+      <div className="py-2 mx-auto bg-gray-200">
         <Link href="/" className="w-64 block mx-auto">
-          <h1 className="text-center text-4xl font-bold text-gray-800">
+          <h1 className="text-center text-4xl">
             Atsu Portfolio
           </h1>
         </Link>
-        <nav className="flex justify-center text-gray-700">
-          <Link href="/works" className="p-4  hover:text-gray-500">
+        <nav className="mt-2 flex justify-center">
+          <Link href="/works" className="px-4 hover:text-gray-500">
             Works
           </Link>
-          <Link href="/about" className="p-4 hover:text-gray-500">
+          <Link href="/about" className="px-4 hover:text-gray-500">
             About
           </Link>
-          <Link href="/blog" className="p-4 hover:text-gray-500">
+          <Link href="/blog" className="px-4 hover:text-gray-500">
             Blog
           </Link>
         </nav>

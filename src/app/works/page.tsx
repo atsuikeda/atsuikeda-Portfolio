@@ -7,7 +7,7 @@ import {works} from "@/type/WorkType";
 
 export default function WorksPage() {
   return (
-    <div  className="container px-10 mx-auto xl:max-w-screen-lg">
+    <div  className="container px-5 mx-auto xl:max-w-screen-lg">
      <Works works={works} />
     </div>
   );
