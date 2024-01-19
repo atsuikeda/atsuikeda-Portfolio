@@ -1,10 +1,9 @@
 "use client";
 
 import { WorkType } from "@/type/WorkType";
-// import { Splide, SplideSlide } from "splide-nextjs/react-splide";
 
-import { Splide, SplideSlide } from "@splidejs/react-splide";
-import '@splidejs/react-splide/css';
+import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
+import "@splidejs/splide/css";
 
 import WorkSlider from "./WorkSlider";
 
@@ -15,19 +14,35 @@ type Props = {
 export default function Slider({ works }: Props) {
   return (
     <Splide
+      hasTrack={false}
       options={{
         rewind: true,
         interval: 3000,
         type: "loop",
         autoplay: true,
-        arrows: false,
+        // arrows: false,
+        // pagination: false,
       }}
     >
-      {works.map((work) => (
-        <SplideSlide>
-          <WorkSlider key={work.id} imageSrc={work.imageSrc} description={work.description} />
-        </SplideSlide>
-      ))}
+      <SplideTrack>
+        {works.map((work) => (
+          <SplideSlide>
+            <WorkSlider
+              key={work.id}
+              imageSrc={work.imageSrc}
+              description={work.description}
+            />
+          </SplideSlide>
+        ))}
+      </SplideTrack>
+
+      <div className="hidden md:block" >
+        <div className="splide__arrows" />
+      </div>
+
+      <div className="md:hidden">
+        <ul className="splide__pagination" />
+      </div>
     </Splide>
   );
 }

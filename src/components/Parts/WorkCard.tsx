@@ -16,7 +16,7 @@ export default function WorkCard({ id, title, imageSrc }: WorkType) {
 
       <div className="p-4 ">
         <Link href={`works/${id}`}>
-          <h3 className="text-lg text-gray-800 font-bold hover:text-gray-500">
+          <h3 className="text-xl hover:text-gray-500">
             {title}
           </h3>
         </Link>

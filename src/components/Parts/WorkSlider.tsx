@@ -3,16 +3,9 @@ import Image from "next/image";
 
 export default function WorkSlider({ imageSrc, description }: WorkType) {
   return (
-    <div>
-      <div>{description}</div>
-      <Image
-        src={imageSrc}
-        alt={description}
-        width={500}
-        height={400}
-        sizes="100vw"
-        className="w-full h-auto"
-      />
+
+    <div className="relative block h-96 ">
+      <Image src={imageSrc} alt={description} fill className="object-cover " />
     </div>
   );
 }
