@@ -1,11 +1,8 @@
-
-
 import type { Metadata } from "next";
 import "./globals.css";
 
 import Header from "@/components/Parts/Header";
 import Footer from "@/components/Parts/Footer";
-import { usePathname } from "next/navigation";
 
 export const metadata: Metadata = {
   title: "Atsu Portfolio",
@@ -21,10 +18,9 @@ export default function RootLayout({
     <html lang="ja">
       <body>
         <Header />
-        <main className="my-10 min-h-[calc(100vh-88px-88px-80px)]">
-          {children}
-        </main>
-        <Footer />
+        {/* <main className="my-10 min-h-[calc(100vh-88px-88px-80px)]"> */}
+        <main className="my-14 min-h-screen sm:pl-[25%]">{children}</main>
+        {/* <Footer /> */}
       </body>
     </html>
   );
