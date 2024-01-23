@@ -20,8 +20,6 @@ export default function Slider({ works }: Props) {
         interval: 3000,
         type: "loop",
         autoplay: true,
-        // arrows: false,
-        // pagination: false,
       }}
     >
       <SplideTrack>

@@ -18,9 +18,8 @@ export default function RootLayout({
     <html lang="ja">
       <body>
         <Header />
-        {/* <main className="my-10 min-h-[calc(100vh-88px-88px-80px)]"> */}
-        <main className="my-14 min-h-screen sm:pl-[25%]">{children}</main>
-        {/* <Footer /> */}
+        <main className="my-8 min-h-screen sm:pl-[25%] sm:my-14">{children}</main>
+        <Footer />
       </body>
     </html>
   );

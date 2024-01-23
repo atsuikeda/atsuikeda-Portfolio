@@ -9,27 +9,24 @@ export default function Modal({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     if (!ref.current?.open) {
-      const body = document.body;
-      const scrollWidth = window.innerWidth - body.clientWidth;
-      body.style.marginRight = `${scrollWidth}px`;
+      const body = document.body
       body.style.overflowY = "hidden";
 
       ref.current?.showModal();
     }
   }, []);
 
-  const onClose = () => {
+  const handleModalClose = () => {
     const body = document.body;
     body.style.overflowY = "";
-    body.style.marginRight = "";
 
     router.back();
   };
 
   return (
     <div
-      className="w-full h-full fixed top-0 left-0 bg-black bg-opacity-50"
-      onClick={onClose}
+      className="z-30 w-full h-full fixed top-0 left-0 bg-black bg-opacity-50"
+      onClick={handleModalClose}
     >
       <dialog ref={ref} className="w-11/12 max-w-3xl rounded-lg overflow-hidden">
         <div onClick={(e) => e.stopPropagation()}>{children}</div>
