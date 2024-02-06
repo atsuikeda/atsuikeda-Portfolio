@@ -28,7 +28,7 @@ export default function Modal({ children }: { children: React.ReactNode }) {
       className="z-30 w-full h-full fixed top-0 left-0 bg-black bg-opacity-50"
       onClick={handleModalClose}
     >
-      <dialog ref={ref} className="w-11/12 max-w-3xl rounded-lg overflow-hidden">
+      <dialog ref={ref} className="w-11/12 max-w-3xl rounded-lg">
         <div onClick={(e) => e.stopPropagation()}>{children}</div>
       </dialog>
     </div>

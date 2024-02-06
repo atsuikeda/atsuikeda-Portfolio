@@ -1,17 +1,20 @@
-import Modal from "@/components/Parts/Modal";
-import WorkItem from "@/components/Parts/WorkItem";
-import { WorkType, works } from "@/type/WorkType";
+import Modal from "@/components/elements/Modal";
+import WorkItem from "@/components/elements/WorkItem";
+import fetchWorkItem from "@/libs/fetchWorkItem";
+import { WorkItemType } from "@/type/WorkType";
 
-export default function WorkModal({
+export default async function WorkModal({
   params: { id },
 }: {
   params: { id: string };
 }) {
-  const data: WorkType = works.find((work) => work.id === id)!;
-
+  const workItems = await fetchWorkItem();
+  const workItem: WorkItemType = workItems.find(
+    (workItem) => workItem.link === id
+  )!;
   return (
     <Modal>
-      <WorkItem title={data.title} description={data.description} imageSrc={data.imageSrc} />
+      <WorkItem work={workItem} />
     </Modal>
   );
 }

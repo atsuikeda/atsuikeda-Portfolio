@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-import Header from "@/components/Parts/Header";
-import Footer from "@/components/Parts/Footer";
+import Header from "@/components/layouts/Header";
+import Footer from "@/components/layouts/Footer";
 
 export const metadata: Metadata = {
   title: "Atsu Portfolio",

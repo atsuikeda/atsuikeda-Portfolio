@@ -1,9 +1,9 @@
-import SectionTitle from "@/components/Parts/SectionTitle";
 import Link from "next/link";
-import Slider from "../Parts/Slider";
-import { works } from "@/type/WorkType";
+import SectionTitle from "@/components/elements/SectionTitle";
+import Slider from "../elements/Slider";
+import { WorkSliderType } from "@/type/WorkType";
 
-export default function HomeWorks() {
+export default function HomeWorks({ works }: { works : WorkSliderType[]}) {
   return (
     <section>
       <div className="text-center md:flex items-baseline">

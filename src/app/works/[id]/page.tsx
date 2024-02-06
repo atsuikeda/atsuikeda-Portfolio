@@ -1,18 +1,18 @@
 
-import WorkItem from "@/components/Parts/WorkItem";
-import { WorkType, works } from "@/type/WorkType";
+import WorkItem from "@/components/elements/WorkItem";
+import fetchWorkItem from "@/libs/fetchWorkItem";
+import { WorkItemType } from "@/type/WorkType";
 
-export default function WorkPage({
+export default async function WorkPage({
   params: { id },
 }: {
   params: { id: string };
 }) {
-
-  const data: WorkType = works.find((work) => work.id === id)!;
-
+  const workItems = await fetchWorkItem();
+  const workItem: WorkItemType = workItems.find((workItem) => workItem.link === id)!;
   return (
     <div className="container p-10 mx-auto max-w-lg">
-      <WorkItem title={data.title} description={data.description} imageSrc={data.imageSrc}  />
+      <WorkItem work={workItem} />
     </div>
   );
 }

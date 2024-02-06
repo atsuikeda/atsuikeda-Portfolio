@@ -1,12 +1,13 @@
 import HomeWorks from "@/components/templates/HomeWorks";
 import HomeBlog from "@/components/templates/HomeBlog";
+import fetchWorkSlider from "@/libs/fetchWorkSlider";
 
-// ここでworks sliderを取得して、子へprops
+export default async function Home() {
+  const works = await fetchWorkSlider();
 
-export default function Home() {
   return (
     <div className="container px-5 mx-auto xl:max-w-screen-lg">
-      <HomeWorks />
+      <HomeWorks works={works} />
       <HomeBlog />
     </div>
   );

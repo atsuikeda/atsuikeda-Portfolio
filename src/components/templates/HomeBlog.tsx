@@ -1,4 +1,4 @@
-import SectionTitle from "@/components/Parts/SectionTitle";
+import SectionTitle from "@/components/elements/SectionTitle";
 import Link from "next/link";
 
 export default function HomeBlog() {
