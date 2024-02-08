@@ -1,4 +1,4 @@
-import SectionTitle from "../Parts/SectionTitle";
+import SectionTitle from "../elements/SectionTitle";
 
 export default function Skills() {
   return (
@@ -10,8 +10,8 @@ export default function Skills() {
         <p >HTML, CSS, JavaScript, TypeScript</p>
         <h3 className="mt-2 text-xl">フレームワーク&ライブラリ</h3>
         <p>React, Next.js, TailwindCSS</p>
-        <h3 className="mt-2 text-xl">ツール</h3>
-        <p>Git</p>
+        <h3 className="mt-2 text-xl">ツール,サービス 等</h3>
+        <p>Git, Supabase, microCMS, vercel</p>
       </div>
     </div>
   </section>

@@ -1,17 +1,10 @@
 "use client";
-
-import { WorkType } from "@/type/WorkType";
-
+import { WorkSliderType } from "@/type/WorkType";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import "@splidejs/splide/css";
-
 import WorkSlider from "./WorkSlider";
 
-type Props = {
-  works: WorkType[];
-};
-
-export default function Slider({ works }: Props) {
+export default function Slider({ works }: { works: WorkSliderType[] }) {
   return (
     <Splide
       hasTrack={false}
@@ -21,20 +14,19 @@ export default function Slider({ works }: Props) {
         type: "loop",
         autoplay: true,
       }}
+      className="md:px-14"
     >
       <SplideTrack>
         {works.map((work) => (
-          <SplideSlide>
+          <SplideSlide key={work.id}>
             <WorkSlider
-              key={work.id}
-              imageSrc={work.imageSrc}
-              description={work.description}
+              work={work}
             />
           </SplideSlide>
         ))}
       </SplideTrack>
 
-      <div className="hidden md:block" >
+      <div className="hidden md:block">
         <div className="splide__arrows" />
       </div>
 
