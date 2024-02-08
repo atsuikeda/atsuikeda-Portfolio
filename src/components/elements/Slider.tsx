@@ -1,10 +1,7 @@
 "use client";
-
 import { WorkSliderType } from "@/type/WorkType";
-
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import "@splidejs/splide/css";
-
 import WorkSlider from "./WorkSlider";
 
 export default function Slider({ works }: { works: WorkSliderType[] }) {
@@ -17,6 +14,7 @@ export default function Slider({ works }: { works: WorkSliderType[] }) {
         type: "loop",
         autoplay: true,
       }}
+      className="md:px-14"
     >
       <SplideTrack>
         {works.map((work) => (

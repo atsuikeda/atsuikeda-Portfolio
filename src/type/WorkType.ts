@@ -1,4 +1,3 @@
-// workCard、workItem、workSliderを各個別に型定義する。今はまとめて1つになっている
 
 import { MicroCMSImage } from "microcms-js-sdk";
 

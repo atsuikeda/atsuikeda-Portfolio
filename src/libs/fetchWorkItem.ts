@@ -5,7 +5,7 @@ export default async function fetchWorkItem() {
   const data = await client.get({
     endpoint: "works",
     queries: {
-      fields: "id,title,description,image,imgAlt,link",
+      fields: 'id,title,description,imgAlt,image,link'
     },
   });
   const WorksData: WorkItemType[] = data.contents;

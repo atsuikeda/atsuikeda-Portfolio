@@ -1,5 +1,4 @@
 import Works from "@/components/templates/Works";
-import fetchWorkItem from "@/libs/fetchWorkItem";
 import fetchWorks from "@/libs/fetchWorks";
 
 export default async function WorksPage() {

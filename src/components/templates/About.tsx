@@ -8,7 +8,7 @@ export default function About() {
       <div className="px-4 mt-8 justify-center flex flex-wrap">
         <div className="relative w-52 h-52 rounded-full overflow-hidden">
           <Image
-            src="/portfolio-me.jpg"
+            src="/profile-image.jpg"
             alt="プロフィール画像"
             fill
             className="object-cover"

@@ -1,4 +1,5 @@
 import SectionTitle from "@/components/elements/SectionTitle";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function HomeBlog() {
@@ -12,7 +13,9 @@ export default function HomeBlog() {
       </div>
 
       <div className="mt-4 px-4">
-        <p className="p-24 text-center text-2xl text-gray-700 ">coming soon...</p>
+        <p className="p-24 text-center text-2xl text-gray-700 ">
+          coming soon...
+        </p>
       </div>
     </section>
   );
