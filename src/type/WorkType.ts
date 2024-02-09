@@ -22,4 +22,5 @@ export type WorkItemType = {
   image: MicroCMSImage;
   imgAlt: string;
   link: string;
+  url: string;
 };
