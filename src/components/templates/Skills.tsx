@@ -9,9 +9,11 @@ export default function Skills() {
         <h3 className="text-xl">言語</h3>
         <p >HTML, CSS, JavaScript, TypeScript</p>
         <h3 className="mt-2 text-xl">フレームワーク&ライブラリ</h3>
-        <p>React, Next.js, TailwindCSS</p>
+        <p>React, Next.js, express, TailwindCSS</p>
+        <h3 className="mt-2 text-xl">データベース</h3>
+        <p>PostgreSQL</p>
         <h3 className="mt-2 text-xl">ツール,サービス 等</h3>
-        <p>Git, Supabase, microCMS, vercel</p>
+        <p>Git, Supabase, microCMS, vercel, render, Prisma</p>
       </div>
     </div>
   </section>
