@@ -1,5 +1,9 @@
 import Image from "next/image";
 import SectionTitle from "../elements/SectionTitle";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import Link from "next/link";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export default function About() {
   return (
@@ -15,11 +19,24 @@ export default function About() {
           />
         </div>
         <div className="mt-4 pl-4">
-          <p className="text-xl">池田 睦</p>
+          <div className="flex items-end">
+            <p className="text-xl">池田 睦</p>
+            <Link
+              href="https://github.com/atsuikeda"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:opacity-80"
+            >
+              <FontAwesomeIcon icon={faGithub} className="pl-3 h-5" />
+            </Link>
+          </div>
           <p className="mt-2">
-            1997年6月23日生まれ<br />
-            現在はWebエンジニアを目指して学習中です。<br />
-            主にReact,Next.jsをメインとしたフロントエンドの学習に力を入れています。<br />
+            1997年6月23日生まれ
+            <br />
+            現在はWebエンジニアを目指して学習中です。
+            <br />
+            主にReact,Next.jsをメインとしたフロントエンドの学習に力を入れています。
+            <br />
             料理・洋服・革製品が好き。
           </p>
         </div>
