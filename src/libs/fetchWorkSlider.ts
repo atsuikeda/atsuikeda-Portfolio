@@ -7,6 +7,9 @@ export default async function fetchWorkSlider() {
     queries: {
       fields: "id,image,imgAlt",
     },
+    customRequestInit: {
+      cache: "no-store",
+    },
   });
   const WorkSliderData: WorkSliderType[] = data.contents;
 

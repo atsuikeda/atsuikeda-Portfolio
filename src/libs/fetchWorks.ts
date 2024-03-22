@@ -7,6 +7,9 @@ export default async function fetchWorks() {
     queries: {
       fields: "id,title,image,imgAlt,link",
     },
+    customRequestInit: {
+      cache: "no-store",
+    },
   });
   const WorksData: WorksType[] = data.contents;
 
